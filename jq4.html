@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>20190814이인석</title>
+
+    <script
+    src="http://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){ 
+        $("#id1").click(function(){
+          $("img").animate({marginLeft:"+=300px"}, 1000);
+        });
+        $("#id2").click(function(){
+          $("img").animate({marginLeft:"-=300px"}, 1000);
+        });
+        $("#id3").click(function(){
+          $("img").animate({height:"toggle"}, 1000);
+        });
+      });
+    </script>
+    <style>
+
+      input
+      {
+        width:100px;
+        height:30px;
+        border:1px solid red;
+      }
+      img
+      {
+        border:2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+      <img src="2.jpg" width="300px" height="200px">
+      <br><b>귀여워요</b><br>
+      <input id="id1" type="button" value="확대하기">
+      <input id="id2" type="button" value="축소하기">
+  </body>
+  </html>
