@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>20190814이인석</title>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+      $(document).ready(function(){ 
+        $("#id1").click(function(){
+          $("#big1").slideToggle(1000);
+        });
+        $("#id2").click(function(){
+          $("#big2").slideToggle(1000);
+        });
+      });
+    </script>
+    <style>
+
+      .big
+      {
+        display:none;
+        width:350px;
+        height:350px;
+      }
+      input
+      {
+        width:150px;
+        height:30px;
+        border:1px solid #cccccc;
+        margin:10px 15px;
+      }
+      img
+      {
+        width:150px;
+        height:150px;
+      }
+    </style>
+  </head>
+  <body>
+   <table border=1 cellspaceing=0>
+     <tr>
+       <td><img class="small" src=img/1.jpg></td>
+       <td><img class="small" src=img/2.jpg></td>
+     </tr>
+     <tr>
+        <td><input id="id1" type="button" value="큰 이미지로 보기/닫기"></td>
+        <td><input id="id2" type="button" value="큰 이미지로 보기/닫기"></td>
+     </tr>
+     <tr>
+        <td><img id="big1" class="big" src="img/1.jpg"></td>
+        <td><img id="big2" class="big" src="img/2.jpg"></td>
+      </tr>
+   </table>
+  </body>
+  </html>
