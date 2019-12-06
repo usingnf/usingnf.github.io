@@ -1,0 +1,115 @@
+
+      header
+      {
+        height:40px;
+      }
+      #headertxt
+      {
+        font-size:40px;
+        position: relative;
+        top:-10px;
+      }
+      nav
+      {
+        margin:10px;
+      }
+      nav ul
+      {
+        list-style:none;
+        text-align: center;
+        border-top: 1px solid red;
+        border-bottom: 1px solid red;
+        padding: 10px 0;
+      }
+      nav ul li
+      {
+        display: inline;
+        text-transform: uppercase;
+        padding: 0 10px;
+        margin-left:100px;
+        letter-spacing: 10px;
+      }
+      nav ul li a
+      {
+        text-decoration:none;
+        color: black;
+      }
+      nav ul li a:hover
+      {
+        text-decoration:underline;
+        color:orange;
+      }
+      aside#left
+      {
+        width:300px;
+        float: left;
+        margin-left:150px;
+      }
+      #left ul
+      {
+        margin:0px;
+        padding:0px;
+        color:#ffffff;
+        list-style:none;
+        text-indent:15px;
+      }
+      #menu
+      {
+        background: #1f1f1f;
+        text-align: center;
+        padding-right:20px;
+        font-size:30px;
+        height:40px;
+      }
+      #left h3
+      {
+        background: #e3e3e3;
+      }
+      #left ul .li1
+      {
+        background: #3f3f3f;
+        font-size: 20px;
+      }
+      #left ul li a
+      {
+        text-decoration:none;
+        color:#ffffff;
+        display:block;
+      }
+      #left ul li a:hover
+      {
+        background:#dd0033
+      }
+      #main
+      {
+        color:#444444;
+        overflow:hidden;
+        float:left;
+        width:60%;
+        height:580px;
+      }
+      #article1
+      {
+        width:100%;
+        height:100%;
+        border-style:none;
+        
+      }
+      #if
+      {
+        border-style:solid;
+        border-width:5px;
+        border-color:gray;
+        width:95%;
+        height:95%;
+      }
+      #footer1
+      {
+        background-color: #ffffff;
+        height:18%;
+        width:100%;
+        position:absolute;
+        top:92%;
+        left:0%;
+        right:0%;
+      }
