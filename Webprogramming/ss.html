@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>20190814이인석</title>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+      var num = 0;
+      $(document).ready(function(){ 
+        $("#img1").animate({width:"520px"}, 0);
+        $("#img1").animate({height:"450px"}, 0);
+        $("#img1").animate({borderRadius:"50px"}, 0.1);
+        $("#img2").animate({width:"0px"}, 0);
+        $("#img2").animate({height:"0px"}, 0);
+        $("#img2").animate({borderRadius:"0px"}, 0.1);
+        $("#img3").animate({width:"0px"}, 0);
+        $("#img3").animate({height:"0px"}, 0);
+        $("#img3").animate({borderRadius:"0px"}, 0.1);
+        $("#id1").click(function(){
+          num = num +1;
+          $("#div1").html("");
+          $("#div2").html("");
+          if(num%3==1)
+          {
+            var i = 0;
+            while(i<=100)
+            {
+              $("#img1").animate({width:"-=5.2px"}, 0);
+              $("#img1").animate({height:"-=4.5px"}, 0);
+              $("#img1").animate({borderRadius:"0px"}, 0.1);
+              $("#img2").animate({width:"+=5.2px"}, 0);
+              $("#img2").animate({height:"+=4.5px"}, 0);
+              $("#img2").animate({borderRadius:"50px"}, 0.1);
+            i++;
+            }
+          }
+          else if(num%3==2)
+          {
+            var i = 0;
+            while(i<=100)
+            {
+              $("#img2").animate({width:"-=5.2px"}, 0);
+              $("#img2").animate({height:"-=4.5px"}, 0);
+              $("#img2").animate({borderRadius:"0px"}, 0.1);
+              $("#img3").animate({width:"+=5.2px"}, 0);
+              $("#img3").animate({height:"+=4.5px"}, 0);
+              $("#img3").animate({borderRadius:"50px"}, 0.1);
+            i++;
+            }
+          }
+          else if(num%3==0)
+          {
+            var i = 0;
+            while(i<=100)
+            {
+              $("#img3").animate({width:"-=5.2px"}, 0);
+              $("#img3").animate({height:"-=4.5px"}, 0);
+              $("#img3").animate({borderRadius:"0px"}, 0.1);
+              $("#img1").animate({width:"+=5.2px"}, 0);
+              $("#img1").animate({height:"+=4.5px"}, 0);
+              $("#img1").animate({borderRadius:"50px"}, 0.1);
+            i++;
+            }
+          }
+        });
+        $("#id2").click(function(){
+          var idi = document.getElementById("div1");
+          if(num%3==1)
+          {
+            idi.innerHTML="제목: 리어왕<br>리어에게는 고너릴, 리건, 코델리아라는 3명의 딸이 있다. 리어는 은퇴 후 조용한 삶을 위해 딸들에게 자발적으로 정권을 넘기려 한다. 아버지인 리어 왕으로부터 재물을 얻어내기 위해 고너릴과 리건은 리어에게 과장된 말로 아부하고 리어는 흡족해 한다. 그러나 코델리아는 자신을 얼마만큼 사랑하는지 말하라는 리어의 질문에 “없습니다.”로 일관하고, 이에 리어는 분노를 견디지 못하고 코델리아를 추방한다. 그리고 왕이라는 이름만 남긴 채 모든 권력을 두 딸에게 이양해 버린다. 그러나 리어는 자신을 사랑한다는 두 딸에게 무참히 버림받고 폭풍이 몰아치는 황야를 헤매게 된다.";
+          }
+          else if(num%3==2)
+          {
+            idi.innerHTML="제목: 맥베스<br>스코틀랜드의 두 장군 맥베스와 뱅코는 반군과의 전쟁에서 승리하고 돌아오던 길에 정체가 불분명한 세 마녀를 마주치게 된다. 마녀들은 맥베스에게 장차 왕위에 오를 것이라는 예언을 하고, 이 예언을 들은 맥베스는 왕위에 대한 야욕에 사로잡히게 된다. 결국 맥베스는 던컨 왕을 살해하고 왕위를 찬탈한다. 맥베스는 죄책감과 왕위를 빼앗길지도 모른다는 불안감에 시달리게 되고, 이로 인해 폭정을 일삼으면서 백성과 귀족들의 원성을 사게 된다. 절망에 빠진 맥베스는 죽음을 맞게 되고, 이후 던컨 왕의 첫째 아들인 맬콤이 왕위에 오른다.";
+          }
+          else if(num%3==0)
+          {
+            idi.innerHTML="제목: 햄릿<br>햄릿의 부왕이 어느 날 급사하자 그의 동생이 왕위에 오르게 되고, 뒤이어 햄릿의 어머니와 결혼까지 하게 된다. 그는 한밤중에 초소에 갔다가 부왕의 망령으로부터 자기 동생에게 독살당했다는 말을 듣고 아버지의 복수를 결심하게 된다. 햄릿은 독이 묻은 칼로 왕을 죽이고 자신도 숨을 거두게 된다. 그러자 왕비도 햄릿을 죽이려고 왕이 준비한 독주를 마시고 스스로 죽음을 맞게 되고, 왕위는 결국 노르웨이 왕자에게 돌아간다.";
+          }
+        });
+        $("#id3").click(function(){
+          var idi = document.getElementById("div2");
+          if(num%3==1)
+          {
+            idi.innerHTML="셰익스피어 4대 비극 중 하나로 꼽히는 《리어 왕》은 켈트 신화로 알려진 레어 왕(King Leir) 전설이 원전이다. 총 5막으로 구성돼 있으며, 셰익스피어가 집중적으로 비극을 집필하던 시기(1600∼1610년)인 1605년에 쓰인 것으로 추정되며 1608년에 간행되었다. <리어 왕>은 허울만을 믿고 경솔한 판단을 했다 모든 것을 잃고 끔찍한 파국을 맞는 노년의 왕을 통해서 진실의 가치를 조명하고 나아가 인간 정체성에 대해 냉혹하게 성찰한 작품이다.";
+          }
+          else if(num%3==2)
+          {
+            idi.innerHTML="'맥베스'는 범죄를 저지른 뒤 죄책감에 빠진 주인공 맥베스가 공포와 절망 속에 갇혀 무분별하게 죄를 더하며 파멸해가는 과정을 그리고 있다. 충신이었던 맥베스는 마녀들의 예언에 현혹되고, 부인의 부추김으로 인해 던컨 왕을 살해하게 된다. 이후에도 자신의 왕권을 위협해 올 인물들에 불안을 느끼고 살인을 거듭해 나간다.";
+          }
+          else if(num%3==0)
+          {
+            idi.innerHTML="셰익스피어 비극은 개인과 그를 둘러싼 사회나 운명과의 대립을 다루고 있기도 하지만, 한 개인 안에서 진행되는 도덕적 갈등이 본질적인 것이다. 이러한 갈등 구조에서 성격과 행동의 극단성은 파국으로 이끄는 숙명적인 힘으로 작용한다. 그러므로 브래들리(Bradley)가 지적하듯 셰익스피어 비극에서 “성격은 곧 운명”이다.";
+          }
+        });
+      });
+    </script>
+    <style>
+
+      input
+      {
+        position:absolute;
+        width:100px;
+        height:30px;
+        border:1px solid red;
+      }
+      img
+      {
+        position:absolute;
+        border:2px solid red;
+        margin-right:50px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="main">
+        <img id="img1" src="img/ss1.jpg" width="520px" height="450px">
+        <img id="img2" src="img/ss2.jpg" width="520px" height="450px">
+        <img id="img3" src="img/ss3.jpg" width="520px" height="450px">
+        
+        <input id="id1" type="button" value="다음 책보기" style="top: 480px; left:10px;">
+        <input id="id2" type="button" value="줄거리" style="top: 10px; left:550px;">
+        <input id="id3" type="button" value="작품 의미" style="top: 280px; left:550px;">
+  
+        <div id="div1" style="position: absolute; top: 50px; left:550px;"></div>
+        <div id="div2" style="position: absolute; top: 320px; left:550px;"></div>
+    </div>
+      
+  </body>
+  </html>

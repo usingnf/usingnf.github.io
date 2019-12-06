@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <link href="MyCss.css" rel="stylesheet">
+    <title>20190814이인석</title>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+      $(document).ready(function(){ 
+        $(".li1").click(function(){
+          $("#if").hide(100);
+          $("#if").show(100);
+        });
+      });
+    </script>
+    <style>
+
+
+    </style>
+  </head>
+  <body>
+      
+      <header>
+        <a href="jq6.html" style="text-decoration: none; color:#000000;"><img src="img/bookimg.jpeg" width="80px" height="50px"><span id="headertxt">동양북스</span></a>
+      </header>
+      <nav>
+        <ul>
+          <li class="li1"><a id="a1" href="jq6.html">HOME</a></li>
+          <li class="li1"><a href="ko.html" target="if1">ACT1</a></li>
+          <li class="li1"><a href="eu.html" target="if1">ACT2</a></li>
+          <li class="li1"><a href="ss.html" target="if1">ACT3</a></li>
+        </ul>
+
+      </nav>
+      <aside id = "left">
+        <ul>
+          <li id="menu">메뉴</li>
+          <li class="li1"><a href="jq1.html" target="if1">fade-in-out</a></li>
+          <li class="li1"><a href="jq2.html" target="if1">slide-up-down-toggle</a></li>
+          <li class="li1"><a href="jq2-1.html" target="if1">큰 이미지로 보기/닫기</a></li>
+          <li class="li1"><a href="jq3.html" target="if1">확대하기/축소하기</a></li>
+          <li class="li1"><a href="jq4.html" target="if1">오른쪽/왼쪽</a></li>
+          <li class="li1"><a href="jq5.html" target="if1">오른쪽/왼쪽2</a></li>
+        </ul>
+      </aside>
+      <section id = "main">
+        <article id = "article1">
+          <iframe id="if" name = "if1" src = "jq1.html"></iframe>
+        </article>
+      </section>
+      <footer id = "footer1">
+        Copyright (c) 2019 dongyangUni<br>
+        서울시 구로동 111-11번지 동양대학교 학새회관 214호 tel: 123-4567<br>
+        관리자 : admin@dongyang.ac.kr
+      </footer>
+  </body>
+  </html>

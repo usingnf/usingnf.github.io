@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>20190814이인석</title>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+      var num = 0;
+      $(document).ready(function(){ 
+        $("#img2").hide(1);
+        $("#img3").hide(1);
+        $("#id1").click(function(){
+          num = num +1;
+          $("#main").hide(100);
+          $("img").hide(100);
+          $("#div1").html("");
+          $("#div2").html("");
+          if(num%3==1)
+          {
+            $("#main").show(100);
+            $("#img2").show(100);
+          }
+          else if(num%3==2)
+          {
+            $("#main").show(100);
+            $("#img3").show(100);
+          }
+          else if(num%3==0)
+          {
+            $("#main").show(100);
+            $("#img1").show(100);
+          }
+        });
+        $("#id2").click(function(){
+          var idi = document.getElementById("div1");
+          if(num%3==1)
+          {
+            idi.innerHTML="제목: 콩쥐 팥쥐<br>콩쥐의 어머니가 죽자 계모가 자신이 낳은 딸 팥쥐를 데리고 콩쥐의 집으로 들어온다. 계모는 콩쥐에게 갖은 구박을 하며 일을 시킨다. 어느날 콩쥐는 잔치에 가다 신발 한 짝을 잃어 버린다. 신발을 발견한 원님이 콩쥐에게 돌려 주면서 결국 콩쥐와 혼인한다. 그러자 질투가 난 팥쥐가 콩쥐를 유인하여 연못에 빠뜨려 죽이고는 자신이 콩쥐인 양 행세한다. 원님은 콩쥐의 시신을 찾아 살려 내고 팥쥐를 죽여 계모에게 보낸다. 팥쥐의 시신을 본 계모는 놀라서 죽는다.";
+          }
+          else if(num%3==2)
+          {
+            idi.innerHTML="제목: 도깨비 방망이<br>나무꾼이 산에서 나무를 하면서 떨어진 개암을 줍고 있었다. 나무꾼은 개암을 줍다가 빈집을 찾게되는데, 빈집 안에 있다가 갑자기 도깨비 무리가 나타나서 몸을 숨긴다. 도깨비들은 나무꾼을 알아차리지 못하고 여러 보물을 만들며 놀고 있었는데, 숨어있던 나무꾼은 가지고 있던 개암을 깨뜨렸고, 도깨비는 이 소리에 놀라 달아나게 된다. 나무꾼은 도깨비가 만든 보물을 가지고 마을로 돌아오고 이 이야기를 이웃이 듣고 똑같이 따라했다가 도깨비들에게 들켜서 크게 혼나게 된다.";
+          }
+          else if(num%3==0)
+          {
+            idi.innerHTML="제목: 흥부 놀부<br>마을에 부자인 놀부와 가난한 흥부 형제가 살고 있었다. 흥부는 놀부에게 먹을걸 구걸하지만 놀부는 흥부에게 먹을걸 쉽게 베풀지 못한다. 어느날 흥부는 길거리에서 다친 제비를 보고 제비를 치료해준다. 치료를 받은 제비는 흥부에서 박씨 하나를 물어다준다. 박씨를 심고 나온 박을 가른 흥부는 박 안에서 수많은 보물을 얻게된다. 이 사실을 들은 놀부도 제비를 찾아 치료해주지만 놀부의 박에서는 도깨비가 나타나 놀부의 재산을 모두 없애버린다.";
+          }
+        });
+        $("#id3").click(function(){
+          var idi = document.getElementById("div2");
+          if(num%3==1)
+          {
+            idi.innerHTML="주인공들에게 보이는 죽음과 변신 모티프는 농경신화적 성격을 지니는데, 여성성을 증명해야 하는 내적 요구가 상대적으로 강한 동아시아에서 주인공의 고난과 죽음, 환생이 두드러진다는 분석이 나오기도 했다. 초기 연구가 <콩쥐팥쥐>의 범세계적 연관성에 초점을 맞추거나 소설과의 연관성을 분석하고, 이념적 지향을 부각하는 경향을 보였다면 앞으로는 작품 자체에 논의가 집중될 필요가 있다. 작품세계에 대한 다각적이고 깊이 있는 분석이 축적된다면 작품의 의미와 전승 집단의 의식, 전승을 가능하게 한 사회적 배경과 같은 것들이 밝혀질 것이다";
+          }
+          else if(num%3==2)
+          {
+            idi.innerHTML="이와 같은 모방담의 구조는 착한 사람은 선행을 하여 행운을 얻지만, 선행은 하지도 않으면서 그런 행운만을 얻기 위하여 착한 사람의 행위를 모방하는 악한 인물은 오히려 벌을 받는 것으로 이루어져 있다. 이 때 선인과 악인의 대립이 마을 사람인 경우보다 형제로 설정되어 있는 것은 의미가 있다. 앞의 경우가 소박한 선악의 차원에서 이루어진 교훈적인 의미만을 담고 있다면, 뒤의 것은 오랜 기간 누적되어 온 형제간의 갈등을 드러낸다. 형은 장자 상속권 아래서 기득권을 가진 인물이고, 그가 악인으로 설정된 것은 이러한 문제를 구체화시켜 준다.";
+          }
+          else if(num%3==0)
+          {
+            idi.innerHTML="흥부전전 흥부의 비참하고 어려운 상황을 다룬 장면에서조차 익살과 웃음이 넘쳐 난다. 흥부의 가난은 당시의 이야기꾼이나 소리꾼에 의해 슬프고 우울한 것이 아닌 과장되고 익살스런 모습으로 유쾌하게 만들어졌다. 이러한 웃음은 절박한 상황을 벗어나 보려는 백성들의 건강한 삶의 의지를 나타낸다. 비록 현실에서는 불가능하더라도 제비가 도움을 준다는 초현실적 방법으로 부자가 된 흥부의 이야기는 부를 꿈꾸는 수많은 백성들을 대리 만족시켰다. 또 놀부가 호되게 매운맛을 볼 때면 억눌린 마음을 시원하게 풀며 카타르시스도 느꼈다. 이렇듯 사람들은 《흥부전》을 통해 답답한 현실에서 벗어나 통쾌함을 느끼고, 팍팍한 삶을 위로 받을 수 있었다.";
+          }
+        });
+      });
+    </script>
+    <style>
+
+      input
+      {
+        position:absolute;
+        width:100px;
+        height:30px;
+        border:1px solid red;
+      }
+      img
+      {
+        position:absolute;
+        border:2px solid red;
+        margin-right:50px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="main">
+        <img id="img1" src="img/ko1.png" width="520px" height="450px">
+        <img id="img2" src="img/ko2.png" width="520px" height="450px">
+        <img id="img3" src="img/ko3.png" width="520px" height="450px">
+        
+        <input id="id1" type="button" value="다음 책보기" style="top: 480px; left:10px;">
+        <input id="id2" type="button" value="줄거리" style="top: 10px; left:550px;">
+        <input id="id3" type="button" value="작품 의미" style="top: 280px; left:550px;">
+  
+        <div id="div1" style="position: absolute; top: 50px; left:550px;"></div>
+        <div id="div2" style="position: absolute; top: 320px; left:550px;"></div>
+    </div>
+      
+  </body>
+  </html>

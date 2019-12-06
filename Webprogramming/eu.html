@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>20190814이인석</title>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+      var num = 0;
+      $(document).ready(function(){ 
+        $("#img2").slideUp(1);
+        $("#img3").slideUp(1);
+        $("#id1").click(function(){
+          num = num +1;
+          $("#main").slideUp(100);
+          $("img").slideUp(100);
+          $("#div1").html("");
+          $("#div2").html("");
+          if(num%3==1)
+          {
+            $("#main").slideDown(1000);
+            $("#img2").slideDown(1000);
+          }
+          else if(num%3==2)
+          {
+            $("#main").slideDown(1000);
+            $("#img3").slideDown(1000);
+          }
+          else if(num%3==0)
+          {
+            $("#main").slideDown(1000);
+            $("#img1").slideDown(1000);
+          }
+        });
+        $("#id2").click(function(){
+          var idi = document.getElementById("div1");
+          if(num%3==1)
+          {
+            idi.innerHTML="제목: 라푼젤<br>임신한 왕비가 아기가 태어나기 전 병에 걸려 생명이 위독해진다. 치유의 힘을 가진 마법의 금빛 꽃을 달여 먹은 왕비는 건강이 호전되어 건강한 공주를 낳는다. 하지만 자신의 영원한 젊음을 위해 마법의 금빛 꽃이 꼭 필요했던 고델은 꽃을 숨겨두고 혼자만 젊음을 유지하려 하다 사람들에게 빼앗긴다. 고델은 이제는 꽃이 아닌 라푼젤의 머리카락으로만 영원한 젊음을 유지할 수 있다는 것을 알게 되어 라푼젤을 납치해 자신의 탑에 가둔다. 어느 날 플린이 성에 침입한다. 라푼젤은 고델과 맞서고, 그녀를 구하러 온 플린은 위협에 빠진다.";
+          }
+          else if(num%3==2)
+          {
+            idi.innerHTML="제목: 빨간망토<br>주인공인 빨간모자 쓴 소녀가 할머니께 병문안을 가다가 늑대와 만났고, 늑대에게 병문안을 가는 중이라고 말했으며, 늑대가 이를 이용해 할머니 댁에 가서 문 열여달라고 말하고 빨간 두건의 할머니를 삼킨 뒤에 빨간 두건도 삼켜버렸다. 그런 다음 늑대는 침대에 누워 할머니인척 했으며, 지나가던 사냥꾼이 할머니와 손녀를 잡아먹고 배불러 자고 있는 늑대의 배를 갈라 둘을 구출하고 돌들로 속을 메꾼 뒤 꿰맸다. 늑대는 자다가 목이 말라 우물의 물을 마시려다 돌의 무게 때문에 몸이 앞으로 고꾸라져 죽는다.";
+          }
+          else if(num%3==0)
+          {
+            idi.innerHTML="제목: 백설공주<br>아름다운 공주가 계모 왕비의 시샘을 받아 숲으로 쫓겨나 금광을 캐며 사는 일곱 난장이의 도움을 받으며 살게 된다. 계모 왕비는 이후에도 여러 차례 공주를 죽이려다 결국 독이 든 사과를 먹여 깊은 잠에 빠뜨리지만 왕자가 나타나 공주를 깨우고 계모 왕비는 벌을 받게 된다.";
+          }
+        });
+        $("#id3").click(function(){
+          var idi = document.getElementById("div2");
+          if(num%3==1)
+          {
+            idi.innerHTML="이 영화의 주제는 꿈에 대한 열망이다. 18년 동안 한 번도 밖에 나와보지 못한 라푼젤. 그녀는 탑 밖으로 보이는 등불을 한 번만이라도 직접 보고 싶은 꿈이 있다. 하지만 그녀는 혼자 세상에 나갈 용기가 없다. 그녀의 그런 심정이 잘 표현된 것은 처음으로 유진을 따라 탑 밖으로 나가는 장면이다. 그녀는 긴 머리칼을 이용해 탑 아래로 한 번에 내려온다. 하지만 첫발을 내딛지 못하고 땅을 바라보며 망설이다 어렵게 첫발을 내딛는다. 이제 라푼젤은 그녀가 원하는 것을 얻기 위해 한 걸음 나아간 것이다.";
+          }
+          else if(num%3==2)
+          {
+            idi.innerHTML="현대에는 빨간 두건이 늑대를 패거나 아니면 사랑에 빠지는 등 내용을 바꾼 작품도 나와있다.[3] 전이 된 이야기에서 엿볼 수 있듯, 빨간 두건은 여성의 성적 성장을 은유한다는 해석도 존재하며, 이 경우 빨간색을 생리혈의 상징으로 보기도 한다. 다만 페로 버전의 역관광 사례로만 기억하는 사람들에겐 위의 성적인 해석은 다소 충격적일 수 있다.";
+          }
+          else if(num%3==0)
+          {
+            idi.innerHTML="판본에 따라서는 고통스러워하는 어머니 또는 계모가 결혼식장에서 강제로 춤을 추게 해 모두가 구경하게 되거나 영원히 춤을 추게 되었다는 내용도 있다. 각색판에서는 왕비가 벌로 달군 신발을 신기는 에피소드는 생략되거나 달군 신발을 신고 뜨거워서 멀리 달아나버리는 정도로 순화되는 경우가 많다. 왕비가 빗자루를 타고 백설공주를 해치기 위해 백설공주가 사는 곳으로 가다가 엄청난 천둥번개와 폭우를 동반한 태풍을 만나는 바람에 추락해 즉사하거나 왕비가 스스로 자결하는 판본도 있으며 혹은 난쟁이들에게 쫓겨 절벽에 몰리다가 천둥번개 소리에 놀라 절벽 아래로 추락사했다는 결말도 있다. 왕비가 모두 먹어치우고 백설공주를 확실히 처리했다며 만족스러워하는 부분도 대부분의 판본에서는 사냥꾼에게 백설공주를 죽이도록 시켰으나 죽이지 못했다 정도로 순화된다.";
+          }
+        });
+      });
+    </script>
+    <style>
+
+      input
+      {
+        position:absolute;
+        width:100px;
+        height:30px;
+        border:1px solid red;
+      }
+      img
+      {
+        position:absolute;
+        border:2px solid red;
+        margin-right:50px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="main">
+        
+        <img id="img2" src="img/eu2.jpg" width="520px" height="450px">
+        <img id="img3" src="img/eu3.jpg" width="520px" height="450px">
+        <img id="img1" src="img/eu1.jpg" width="520px" height="450px">
+        
+        <input id="id1" type="button" value="다음 책보기" style="top: 480px; left:10px;">
+        <input id="id2" type="button" value="줄거리" style="top: 10px; left:550px;">
+        <input id="id3" type="button" value="작품 의미" style="top: 280px; left:550px;">
+  
+        <div id="div1" style="position: absolute; top: 50px; left:550px;"></div>
+        <div id="div2" style="position: absolute; top: 320px; left:550px;"></div>
+    </div>
+      
+  </body>
+  </html>
