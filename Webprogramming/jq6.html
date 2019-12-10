@@ -9,11 +9,17 @@
     <script src="jquery-3.3.1.js"></script>
     <script>
       $(document).ready(function(){ 
+        for (let i = 1; i <= 6; i++)
+        {
+        $("#li" + i).css({marginLeft: "-=300px"});
+        $("#li" + i).animate({marginLeft: "+=300px"}, 500 + (100 * i));
+         }
         $(".li1").click(function(){
           $("#if").hide(100);
           $("#if").show(100);
         });
       });
+      
     </script>
     <style>
 
@@ -37,12 +43,12 @@
       <aside id = "left">
         <ul>
           <li id="menu">메뉴</li>
-          <li class="li1"><a href="jq1.html" target="if1">fade-in-out</a></li>
-          <li class="li1"><a href="jq2.html" target="if1">slide-up-down-toggle</a></li>
-          <li class="li1"><a href="jq2-1.html" target="if1">큰 이미지로 보기/닫기</a></li>
-          <li class="li1"><a href="jq3.html" target="if1">확대하기/축소하기</a></li>
-          <li class="li1"><a href="jq4.html" target="if1">오른쪽/왼쪽</a></li>
-          <li class="li1"><a href="jq5.html" target="if1">오른쪽/왼쪽2</a></li>
+          <li class="li1"><a href="jq1.html" target="if1" id="li1">fade-in-out</a></li>
+          <li class="li1"><a href="jq2.html" target="if1" id="li2">slide-up-down-toggle</a></li>
+          <li class="li1"><a href="jq2-1.html" target="if1" id="li3">큰 이미지로 보기/닫기</a></li>
+          <li class="li1"><a href="jq3.html" target="if1" id="li4">확대하기/축소하기</a></li>
+          <li class="li1"><a href="jq4.html" target="if1" id="li5">오른쪽/왼쪽</a></li>
+          <li class="li1"><a href="jq5.html" target="if1" id="li6">오른쪽/왼쪽2</a></li>
         </ul>
       </aside>
       <section id = "main">
